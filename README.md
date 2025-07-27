@@ -1,10 +1,9 @@
-Slop100: Decentralized AI Art Leaderboard on Bitcoin
-
- 
-
- # Slop100: Decentralized AI Art Leaderboard on Bitcoin
+S# Slop 100: Decentralized AI Art Leaderboard on Bitcoin
 
 [![Bitcoin](https://img.shields.io/badge/Bitcoin-Metaprotocols-orange.svg)](https://bitcoin.org) [![Ordinals](https://img.shields.io/badge/Ordinals-Inscriptions-blue.svg)](https://ordinals.com) [![Runes](https://img.shields.io/badge/Runes-Tokens-green.svg)](https://runesprotocol.com) [![Hackathon](https://img.shields.io/badge/Hackathon-Project-red.svg)](https://your-hackathon-link.com)
+
+[Live Demo](https://same-bf8ljyus7gw-latest.netlify.app/)
+
 
 ## Overview
 
@@ -71,10 +70,12 @@ Pull requests welcome! Focus on Bitcoin compatibility and TCR security.
 ## Credits
 
 - Inspired by Ordinals, Runes, and TCR designs 
-- Built with help from Grok (xAI)
+- Built with help from Grok (xAI) and Claude 4 Sonnet
 
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
 
 ---
+
+
