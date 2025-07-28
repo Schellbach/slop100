@@ -1,4 +1,4 @@
-S# Slop 100: Decentralized AI Art Leaderboard on Bitcoin
+Slop 100: Decentralized AI Art Leaderboard on Bitcoin
 
 [![Bitcoin](https://img.shields.io/badge/Bitcoin-Metaprotocols-orange.svg)](https://bitcoin.org) [![Ordinals](https://img.shields.io/badge/Ordinals-Inscriptions-blue.svg)](https://ordinals.com) [![Runes](https://img.shields.io/badge/Runes-Tokens-green.svg)](https://runesprotocol.com) [![Hackathon](https://img.shields.io/badge/Hackathon-Project-red.svg)](https://your-hackathon-link.com)
 
