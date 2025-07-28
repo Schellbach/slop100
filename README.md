@@ -1,3 +1,76 @@
+Slop 100: Decentralized AI Art Leaderboard on Bitcoin
+
+[![Bitcoin](https://img.shields.io/badge/Bitcoin-Metaprotocols-orange.svg)](https://bitcoin.org) [![Ordinals](https://img.shields.io/badge/Ordinals-Inscriptions-blue.svg)](https://ordinals.com) [![Runes](https://img.shields.io/badge/Runes-Tokens-green.svg)](https://runesprotocol.com) [![Hackathon](https://img.shields.io/badge/Hackathon-Project-red.svg)](https://your-hackathon-link.com)
+
+[Live Demo](https://same-bf8ljyus7gw-latest.netlify.app/)
+
+
+## Overview
+
+The Slop 100 is inspired by the Billboard Top 100, reimagined as a daily leaderboard for AI-generated slop. Built using Bitcoin metaprotocols, it uses Runes for token-based curation via a Token-Curated Registry (TCR). Community holders stake tokens to propose, challenge, and vote on entries, ensuring high-quality, viral AI art rises to the top. The leaderboard is inscribed daily on Bitcoin, creating a permanent, decentralized snapshot.
+
+## Features
+
+- **Virality Ranking**: A composite algorithm scores art based on engagement, velocity, spread, and quality—blended with community curation.
+- **Token-Curated Registry (TCR)**: Use SLOP runes for decentralized curation:
+  - Stake to propose AI art for the leaderboard.
+  - Challenge low-quality entries to trigger votes.
+  - Vote with tokens; winners rewarded, losers slashed.
+  - Graded design for dynamic rankings.
+- **Daily Automation**: Inscribe the top 100 leaderboard as JSON on Bitcoin.
+
+## How It Works
+
+**TCR Curation**:
+   - **Propose**: Stake SLOP and inscribe a proposal linked to your submission.
+   - **Challenge**: Stake against dubious entries; starts a 24-hour vote window.
+   - **Vote**: Transfer SLOP to yes/no addresses.
+   - **Rewards**: Winning stakes returned + bonuses; losers redistributed/burned.
+
+     This system allows for decentralized rankings, with minimum deposits to prevent spam.
+
+**Leaderboard Compilation**:
+   - Aggregate votes and virality scores.
+   - Inscribe daily JSON snapshot.
+
+**Virality Algorithm**:
+   - Composite Virality Score (CVS) = Weighted sum of Engagement, Velocity, Spread, and Quality.
+   - High shares boost velocity
+   - The crowd analyzes originality
+
+Architecture Diagram:
+
+```
+User -> AI Gen (Stable Diffusion + BTC Seed) -> TCR Proposal (Stake SLOP via Runes)
+Community -> Challenge/Vote (SLOP Transfers)
+Daily Script -> Tally Votes -> Inscribe Leaderboard Ordinal
+App/UI -> Display Top 100 (Fetch from Explorers)
+```
+
+## Tech Stack (Proposed)
+
+- **Bitcoin Integration**: OrdinalsBot API (testnet), bitcoinlib for tx handling.
+- **Tokens**: Runes protocol for SLOP (fungible tokens on Bitcoin).
+- **Data Fetching**: Mempool.space API for block data and tx scans.
+- **Frontend **: React for leaderboard viewer.
+
+## Future Ideas
+
+- Mainnet launch with full SLOP4slop economy.
+- Frontend dashboard for proposals/voting.
+- Integrate more metaprotocols (e.g., BRC-20 fallback).
+- ML enhancements for virality prediction.
+
+## Contributing
+
+Pull requests welcome! Focus on Bitcoin compatibility and TCR security.
+
+## Credits
+
+- Built for Plebfi: Metaprotocols
+- Inspired by Ordinals, Runes, and TCR designs 
+- Built with help from Grok (xAI), Claude 4 Sonnet, and Same.new
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -20,17 +93,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+MIT License. See [LICENSE](LICENSE) for details.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
