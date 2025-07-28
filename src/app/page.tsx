@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowUp, ArrowDown, Star, Share2, Play, Plus, Coins } from "lucide-react"
+import { ArrowUp, ArrowDown, Star, Play, Plus, Coins } from "lucide-react"
 import { useEffect, useState } from 'react'
 
 interface ChartEntry {
@@ -478,7 +478,7 @@ export default function Home() {
             <div className="col-span-1">LAST WEEK</div>
             <div className="col-span-1">PEAK POS</div>
             <div className="col-span-1">WKS ON CHART</div>
-            <div className="col-span-2">ACTIONS</div>
+            <div className="col-span-2"></div>
           </div>
         </div>
 
@@ -560,19 +560,16 @@ export default function Home() {
                 {entry.url ? (
                   <Button asChild size="sm" className="bg-green-600 hover:bg-green-700 text-white border-0 text-xs">
                     <a href={entry.url} target="_blank" rel="noopener noreferrer">
-                      <Play className="w-4 h-4 mr-1 fill-current" />
-                      Play
+                      
+                      <Play className="w-4 h-4 fill-current" />
                     </a>
                   </Button>
                 ) : (
                   <Button size="sm" variant="outline" className="text-xs opacity-50" disabled>
-                    <Play className="w-4 h-4 mr-1" />
-                    Play
+                    <Play className="w-4 h-4" />
+                    
                   </Button>
                 )}
-                <Button size="sm" variant="ghost" className="hover:bg-gray-700">
-                  <Share2 className="w-4 h-4" />
-                </Button>
               </div>
             </div>
           ))}
